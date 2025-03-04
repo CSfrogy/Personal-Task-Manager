@@ -1,4 +1,5 @@
 <?php
+require 'db.php';
 $message = ''; // Initialize an empty message variable
 
 // Handle login form submission
