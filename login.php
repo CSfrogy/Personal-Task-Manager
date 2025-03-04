@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php if (!empty($message)): ?>
             <p><?php echo $message; ?></p>
         <?php endif; ?>
-        <p style="font-size:small;">You do not have an account?<a href="/register.php" style="color:blue-500;">Register here</a></p>
+        <p style="font-size:small;">You do not have an account?<a href="/register.php" style="color:blue-500;hover:underline">Register now</a></p>
     </form>
 
 

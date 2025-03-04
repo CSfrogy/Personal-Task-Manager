@@ -1,5 +1,4 @@
 <?php
-require 'db.php';
 $message = ''; // Initialize an empty message variable
 
 // Handle login form submission
@@ -29,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="email" name="email" id="email" placeholder="Your email...">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="Create your own password...">
-        <button type="submit" value="Sign in">Sign in</button>
+        <button type="submit" value="Sign in">Create account</button>
         <?php if (!empty($message)): ?>
             <p><?php echo $message; ?></p>
         <?php endif; ?>
