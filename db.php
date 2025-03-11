@@ -1,9 +1,12 @@
 <?php
 require 'functions.php';
+
+
 $host = 'localhost:3306';
 $dbname = 'taskmanager';
 $dbusername = 'root';
 $dbpassword = '123';
+
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $dbusername, $dbpassword);
@@ -15,6 +18,4 @@ try {
     }
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
-    
 }
-
